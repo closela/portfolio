@@ -2,14 +2,66 @@ body {
   background-color: LightGray;
 }
 
+nav {
+  padding: .5rem;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
 h1 {
   background-color: rgb(30, 144, 255);
+  color: #f8f8ff;
+  padding: 1rem;
 }
 
 h2 {
-  background-color: 
+  background-color: #20b2aa;
+  color: #f8f8ff;
+  padding: 1rem;
+}
+
+h3 {
+  background-color: MediumAquaMarine;
+  color: #f8f8ff;
+  padding: 1rem;
+}
+
+h4 {
+  background-color: rgb(135, 206, 235);
+  color: #f8f8ff;
+  padding: 1rem;
 }
 
 p {
-  color: #f8f8ff;
+  color: #000000;
+}
+
+img {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+a:link {
+  color: DodgerBlue;
+}
+
+a:visited {
+  color: Black;
+}
+
+a:hover {
+  color: Cyan;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin: 10px;
+}
+
+footer {
+  font-style: italic;
 }

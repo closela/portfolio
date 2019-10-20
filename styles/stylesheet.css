@@ -46,6 +46,14 @@ img {
   border-style: solid;
   border-color: black;
   border-width: 2px;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+img:hover {
+  transition: filter .5s ease-in;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 a:link {
@@ -58,6 +66,16 @@ a:visited {
 
 a:hover {
   color: Cyan;
+}
+
+.menu {
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: #ffffff;
+  background-color: DodgerBlue;
+  transition: all 1s linear;
 }
 
 ul {
@@ -73,6 +91,11 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.container:hover {
+  border: 3px solid white;
+  transition: border 4s ease;
 }
 
 footer {

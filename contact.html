@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>adventurEAST | Survey</title>
+    <script src="https://kit.fontawesome.com/5ac91aa514.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles-survey.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Arvo|Raleway&display=swap');
+      h1 {
+        font-family: Arvo, serif;
+      }
+      label, .checkbox, legend, option, input {
+        font-family: Raleway, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>adventurEAST Subscriber Survey</h1>
+
+    <form method="GET">
+      <label>Your name:
+        <input type="text" name="applicantName">
+      </label>
+
+      <label>Your email:
+        <input type="email" name="applicantEmail">
+      </label>
+
+      <label>Your age:
+        <input type="number" name="applicantAge">
+      </label>
+
+      <fieldset class="checkbox">
+        <legend>What type(s) of activities are you interested in?</legend>
+        <label>
+          <input type="checkbox" name="activity" value="hiking">Hiking
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          <input type="checkbox" name="activity" value="climbing">Rock Climbing
+          <span class="checkmark"></span>
+        </label>
+        <label>
+          <input type="checkbox" name="activity" value="kayaking">Kayaking
+          <span class="checkmark"></span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you interested in becoming an adventurEAST ambassador?</legend>
+        <label>
+          <input type="radio" name="special" value="yes"> Yes
+        </label>
+        <label>
+          <input type="radio" name="special" value="no"> No
+        </label>
+      </fieldset>
+
+      <label>How many days per week are you typically active?
+        <select name="days">
+          <option value="">Please select</option>
+          <option value="few">0-2</option>
+          <option value="some">3-5</option>
+          <option value="many">6+</option>
+        </select>
+      </label>
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+  </body>
+</html>
